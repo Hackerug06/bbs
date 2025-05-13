@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Bespoke Babystore</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Bespoke Babystore</h1>
+                <p class="slogan">Let us grow your baby</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html" class="active">Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="cart.html" class="cart-link">Cart (<span id="cart-count">0</span>)</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">☰</div>
+        </div>
+    </header>
+
+    <main>
+        <section class="products-page">
+            <div class="container">
+                <h2>Our Baby Bottle Collection</h2>
+                <div class="filter-section">
+                    <select id="filter-category">
+                        <option value="all">All Categories</option>
+                        <option value="glass">Glass Bottles</option>
+                        <option value="plastic">Plastic Bottles</option>
+                        <option value="travel">Travel Sets</option>
+                    </select>
+                    <select id="filter-price">
+                        <option value="all">All Prices</option>
+                        <option value="0-20000">Under UGX 20,000</option>
+                        <option value="20000-40000">UGX 20,000 - 40,000</option>
+                        <option value="40000-60000">UGX 40,000 - 60,000</option>
+                    </select>
+                </div>
+                
+                <div class="products-grid">
+                    <!-- Product 1 -->
+                    <div class="product-detail" data-category="glass" data-price="25000">
+                        <div
