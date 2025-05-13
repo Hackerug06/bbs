@@ -1,112 +1,98 @@
-/* Responsive Styles */
+/* Tablet Styles */
 @media (max-width: 992px) {
-    .product-detail {
-        flex-direction: column;
-    }
-    
-    .about-content {
-        flex-direction: column;
-    }
-    
-    .cart-container {
-        flex-direction: column;
-    }
-    
-    .cart-summary {
-        order: -1;
-        margin-bottom: 30px;
-    }
-}
-
-@media (max-width: 768px) {
-    header .container {
+    .hero .container {
         flex-direction: column;
         text-align: center;
     }
-    
-    nav {
-        margin-top: 20px;
+
+    .hero-buttons {
+        justify-content: center;
     }
-    
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    nav ul li {
-        margin: 5px 0;
-    }
-    
-    .hero h2 {
-        font-size: 2rem;
-    }
-    
-    .cta-buttons {
-        flex-direction: column;
-        gap: 10px;
-    }
-    
-    .filter-section {
+
+    .about-content {
         flex-direction: column;
     }
-    
-    .team-grid {
-        grid-template-columns: 1fr 1fr;
+
+    .cart-container {
+        flex-direction: column;
+    }
+
+    .cart-summary {
+        position: static;
     }
 }
 
-@media (max-width: 576px) {
-    .container {
-        width: 95%;
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .logo h1 {
+        font-size: 1.2rem;
     }
-    
-    .products-grid {
-        grid-template-columns: 1fr;
+
+    nav {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 80%;
+        height: calc(100vh - 70px);
+        background-color: var(--white);
+        box-shadow: var(--box-shadow);
+        transition: left 0.3s ease;
+        z-index: 99;
     }
-    
+
+    nav.active {
+        left: 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+
     .benefits-grid {
         grid-template-columns: 1fr;
     }
-    
-    .team-grid {
+
+    .contact-methods {
         grid-template-columns: 1fr;
     }
-    
-    .mobile-menu-btn {
-        display: block;
-        position: absolute;
-        top: 20px;
-        right: 20px;
-    }
-    
-    nav {
+
+    .cart-header {
         display: none;
-        width: 100%;
-        margin-top: 15px;
     }
-    
-    nav.active {
-        display: block;
-    }
-    
-    nav ul li {
-        margin: 10px 0;
-    }
-    
-    .hero {
-        padding: 60px 0;
-    }
-    
-    .hero h2 {
-        font-size: 1.8rem;
-    }
-    
+
     .cart-item {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 20px 0;
+    }
+
+    .cart-item-details {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .modal-content {
+        width: 95%;
+        padding: 20px;
+    }
+}
+
+/* Small Mobile Styles */
+@media (max-width: 480px) {
+    .hero-buttons {
         flex-direction: column;
     }
-    
-    .cart-item-image {
-        width: 100%;
-        height: auto;
+
+    .filter-options {
+        flex-direction: column;
     }
-      }
+            }
