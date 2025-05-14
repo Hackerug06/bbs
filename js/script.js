@@ -1,3 +1,78 @@
+// Add this at the top of script.js
+// Initialize cart if it doesn't exist
+if (!localStorage.getItem('cart')) {
+    localStorage.setItem('cart', JSON.stringify([]));
+}
+
+// Update the addToCart function to be more robust
+function addToCart(productId) {
+    try {
+        const product = products.find(p => p.id === productId);
+        if (!product) {
+            console.error('Product not found');
+            return;
+        }
+
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+        
+        const existingItem = cart.find(item => item.id === productId);
+        
+        if (existingItem) {
+            existingItem.quantity += 1;
+        } else {
+            cart.push({
+                id: product.id,
+                name: product.name,
+                price: product.price,
+                image: product.image,
+                size: product.size,
+                color: product.color,
+                quantity: 1
+            });
+        }
+        
+        localStorage.setItem('cart', JSON.stringify(cart));
+        updateCartCount();
+        
+        // Show notification
+        showNotification(`${product.name} added to cart!`);
+    } catch (error) {
+        console.error('Error adding to cart:', error);
+    }
+}
+
+// Add this helper function
+function showNotification(message) {
+    const notification = document.createElement('div');
+    notification.className = 'notification';
+    notification.textContent = message;
+    document.body.appendChild(notification);
+    
+    setTimeout(() => {
+        notification.classList.add('show');
+    }, 10);
+    
+    setTimeout(() => {
+        notification.classList.remove('show');
+        setTimeout(() => {
+            document.body.removeChild(notification);
+        }, 300);
+    }, 3000);
+}
+
+// Update the updateCartCount function
+function updateCartCount() {
+    try {
+        const cart = JSON.parse(localStorage.getItem('cart')) || [];
+        const totalItems = cart.reduce((total, item) => total + item.quantity, 0);
+        
+        document.querySelectorAll('#cart-count').forEach(element => {
+            element.textContent = totalItems;
+        });
+    } catch (error) {
+        console.error('Error updating cart count:', error);
+    }
+}
 // Mobile Menu Toggle
 document.addEventListener('DOMContentLoaded', function() {
     const mobileMenu = document.querySelector('.mobile-menu');
