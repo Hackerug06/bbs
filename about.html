@@ -3,115 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Bespoke Babystore (BBS)</title>
+    <title>About Us - Bespoke Babystore</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
         <div class="container">
             <div class="logo">
                 <img src="images/logo.png" alt="Bespoke Babystore Logo">
-                <h1>Bespoke Babystore <span>(BBS)</span></h1>
+                <span>Bespoke Babystore</span>
             </div>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="products.html">Products</a></li>
                     <li><a href="about.html" class="active">About Us</a></li>
-                    <li><a href="cart.html" class="cart-icon"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a></li>
+                    <li><a href="cart.html" class="cart-icon">Cart (<span id="cart-count">0</span>)</a></li>
                 </ul>
             </nav>
             <div class="mobile-menu">
-                <i class="fas fa-bars"></i>
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
     </header>
 
-    <main>
-        <section class="about-page">
-            <div class="container">
-                <div class="about-content">
-                    <div class="about-text">
-                        <h2>Our Story</h2>
-                        <p>Bespoke Babystore (BBS) was founded in 2020 with a simple mission: to provide parents with the highest quality, safest baby bottles on the market. As parents ourselves, we understand the importance of finding products you can trust for your little ones.</p>
-                        <p>Our journey began when we struggled to find baby bottles that met our standards for safety, design, and functionality. We decided to create our own line of bottles that would address all the common frustrations parents face.</p>
-                        <h3>Our Mission</h3>
-                        <p>"Let us grow your baby" isn't just our slogan - it's our promise. We're committed to helping your baby thrive with products that support healthy development and make parenting a little easier.</p>
-                        <h3>Our Values</h3>
-                        <ul>
-                            <li><strong>Safety First:</strong> All our products meet or exceed international safety standards</li>
-                            <li><strong>Quality Assurance:</strong> We rigorously test every product before it reaches you</li>
-                            <li><strong>Customer Care:</strong> Your satisfaction is our top priority</li>
-                            <li><strong>Innovation:</strong> We continuously improve our products based on customer feedback</li>
-                        </ul>
-                    </div>
-                    <div class="about-image">
-                        <img src="images/about-image.jpg" alt="Bespoke Babystore Team">
-                    </div>
+    <section class="about-page">
+        <div class="container">
+            <h1>Our Story</h1>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/about-us.jpg" alt="About Bespoke Babystore">
                 </div>
-                <div class="contact-info">
-                    <h2>Get In Touch</h2>
-                    <p>Have questions or need assistance? We're here to help!</p>
-                    <div class="contact-methods">
-                        <div class="contact-method">
-                            <i class="fas fa-phone"></i>
-                            <p>+256 783 468608</p>
-                            <p>+256 784 973404</p>
-                        </div>
-                        <div class="contact-method">
-                            <i class="fab fa-whatsapp"></i>
-                            <p>Chat with us on WhatsApp</p>
-                            <a href="https://wa.me/256783468608" class="btn primary">Message Us</a>
-                        </div>
-                        <div class="contact-method">
-                            <i class="fas fa-envelope"></i>
-                            <p>Email us at:</p>
-                            <p>info@bespokebabystore.com</p>
-                        </div>
+                <div class="about-text">
+                    <h2>Let us grow your baby</h2>
+                    <p>Founded in 2023, Bespoke Babystore was born out of a passion for providing parents with high-quality, safe, and beautifully designed baby products. As parents ourselves, we understand the importance of finding products that you can trust for your little ones.</p>
+                    <p>Our mission is to make parenting a little easier by offering thoughtfully designed baby bottles that combine functionality with style. We carefully select materials that are safe for babies and durable for everyday use.</p>
+                    <p>Every product in our collection has been tested and approved by real parents and their babies. We're committed to continuous improvement and innovation to meet the evolving needs of modern families.</p>
+                    <div class="contact-info">
+                        <h3>Get in Touch</h3>
+                        <p><strong>Phone:</strong> <a href="tel:+256783468608">+256 783 468608</a> or <a href="tel:+256784973404">+256 784 973404</a></p>
+                        <p><strong>WhatsApp:</strong> <a href="https://wa.me/256783468608" target="_blank">Chat with us</a></p>
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
     <footer>
         <div class="container">
-            <div class="footer-grid">
-                <div class="footer-about">
-                    <h3>Bespoke Babystore</h3>
-                    <p>"Let us grow your baby" with our premium baby products designed for health and happiness.</p>
+            <div class="footer-section">
+                <div class="logo">
+                    <img src="images/logo.png" alt="Bespoke Babystore Logo">
+                    <span>Bespoke Babystore</span>
                 </div>
-                <div class="footer-links">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="products.html">Products</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="cart.html">Cart</a></li>
-                    </ul>
-                </div>
-                <div class="footer-contact">
-                    <h3>Contact Us</h3>
-                    <p><i class="fas fa-phone"></i> +256 783 468608</p>
-                    <p><i class="fas fa-phone"></i> +256 784 973404</p>
-                    <div class="social-icons">
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                    </div>
-                </div>
+                <p class="slogan">Let us grow your baby</p>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2023 Bespoke Babystore (BBS). All rights reserved.</p>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                </ul>
             </div>
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><a href="tel:+256783468608">+256 783 468608</a></li>
+                    <li><a href="tel:+256784973404">+256 784 973404</a></li>
+                    <li><a href="https://wa.me/256783468608" target="_blank">WhatsApp</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 Bespoke Babystore. All rights reserved.</p>
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
     <script src="js/cart.js"></script>
 </body>
     </html>
