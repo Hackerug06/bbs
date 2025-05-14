@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
@@ -23,99 +23,94 @@
                     <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="products.html">Products</a></li>
                     <li><a href="about.html">About Us</a></li>
-                    <li><a href="cart.html" class="cart-icon">Cart (<span id="cart-count">0</span>)</a></li>
+                    <li><a href="cart.html" class="cart-link">Cart <span class="cart-count">0</span></a></li>
                 </ul>
             </nav>
-            <div class="mobile-menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+            <div class="mobile-menu-btn">☰</div>
         </div>
     </header>
 
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Premium Baby Bottles for Happy Babies</h1>
-                <p class="slogan">Let us grow your baby</p>
-                <p>Discover our collection of safe, durable, and beautifully designed baby bottles that make feeding time easier.</p>
-                <div class="cta-buttons">
-                    <a href="products.html" class="btn primary">Shop Now</a>
-                    <a href="about.html" class="btn secondary">Learn More</a>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Premium Baby Bottles for Happy Babies</h1>
+                    <p class="slogan">Let us grow your baby</p>
+                    <p>Discover our collection of safe, durable, and beautifully designed baby bottles that make feeding time a breeze.</p>
+                    <div class="cta-buttons">
+                        <a href="products.html" class="btn btn-primary">Shop Now</a>
+                        <a href="about.html" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="images/hero-bottle.png" alt="Bespoke Baby Bottle">
                 </div>
             </div>
-            <div class="hero-image">
-                <img src="images/hero-bottle.png" alt="Bespoke Baby Bottle">
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="featured-products">
-        <div class="container">
-            <h2>Our Best Sellers</h2>
-            <div class="products-grid">
-                <!-- Featured products will be loaded via JavaScript -->
+        <section class="featured-products">
+            <div class="container">
+                <h2>Featured Products</h2>
+                <div class="product-grid">
+                    <!-- Products will be loaded via JavaScript -->
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="benefits">
-        <div class="container">
-            <h2>Why Choose Our Baby Bottles?</h2>
-            <div class="benefits-grid">
-                <div class="benefit-item">
-                    <img src="images/icon-safe.png" alt="Safe Materials">
-                    <h3>100% Safe Materials</h3>
-                    <p>BPA-free, phthalate-free, and non-toxic materials for your baby's health.</p>
-                </div>
-                <div class="benefit-item">
-                    <img src="images/icon-design.png" alt="Ergonomic Design">
-                    <h3>Ergonomic Design</h3>
-                    <p>Easy to hold and designed to reduce colic and gas.</p>
-                </div>
-                <div class="benefit-item">
-                    <img src="images/icon-easy.png" alt="Easy to Clean">
-                    <h3>Easy to Clean</h3>
-                    <p>Dishwasher safe with wide openings for thorough cleaning.</p>
+        <section class="benefits">
+            <div class="container">
+                <h2>Why Choose Our Baby Bottles?</h2>
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <img src="images/safe-icon.png" alt="Safe Materials">
+                        <h3>100% Safe Materials</h3>
+                        <p>BPA-free, phthalate-free, and non-toxic materials for your baby's health.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <img src="images/design-icon.png" alt="Ergonomic Design">
+                        <h3>Ergonomic Design</h3>
+                        <p>Easy to hold and designed to reduce colic and gas.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <img src="images/easy-icon.png" alt="Easy Cleaning">
+                        <h3>Easy to Clean</h3>
+                        <p>Wide neck design makes cleaning simple and hygienic.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <footer>
         <div class="container">
-            <div class="footer-section">
-                <div class="logo">
-                    <img src="images/logo.png" alt="Bespoke Babystore Logo">
-                    <span>Bespoke Babystore</span>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Bespoke Babystore</h3>
+                    <p>Let us grow your baby with our premium baby products designed for comfort, safety, and style.</p>
                 </div>
-                <p class="slogan">Let us grow your baby</p>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="cart.html">Cart</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>Phone: +256783468608</p>
+                    <p>Alt. Phone: +256784973404</p>
+                    <p>Email: info@bespokebabystore.com</p>
+                </div>
             </div>
-            <div class="footer-section">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="products.html">Products</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="cart.html">Cart</a></li>
-                </ul>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Bespoke Babystore. All rights reserved.</p>
             </div>
-            <div class="footer-section">
-                <h4>Contact Us</h4>
-                <ul>
-                    <li><a href="tel:+256783468608">+256 783 468608</a></li>
-                    <li><a href="tel:+256784973404">+256 784 973404</a></li>
-                    <li><a href="https://wa.me/256783468608" target="_blank">WhatsApp</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="copyright">
-            <p>&copy; 2023 Bespoke Babystore. All rights reserved.</p>
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="js/main.js"></script>
     <script src="js/cart.js"></script>
 </body>
     </html>
